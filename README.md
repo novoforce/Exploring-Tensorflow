@@ -1,4 +1,7 @@
 # Exploring-Tensorflow
+
+## Table Of Contents
+---------------------
 - [Importing library snippets](#importing-library-snippets)
 - [Plotting snippet](#plotting-snippet)
 - [Display image snippet](#display-image-snippet)
