@@ -1,4 +1,13 @@
 # Exploring-Tensorflow
+- [Importing library snippets](#importing-library-snippets)
+- [Plotting snippet](#plotting-snippet)
+- [Display image snippet](#display-image-snippet)
+- [Using pre-trained model snippets](#using-pre-trained-model-snippets)
+- [Compiling and fitting model snippets](#compiling-and-fitting-model-snippets)
+- [Prediction snippets](#prediction-snippets)
+- [Augmentation snippets pre-processing layers for augmentation](#augmentation-snippets-pre-processing-layers-for-augmentation)
+- [Awesome ways of using callbacks](#awesome-ways-of-using-callbacks)
+- [Pre-trained model with grayscale images](#pre-trained-model-with-grayscale-images)
 
 ## Useful code snippets
 
@@ -117,7 +126,7 @@ img_pred=np.expand_dims(img_pred, axis=0)
 result = Efficientnet_model.predict(img_pred)
 ```
 
-#### Augmentation snippets(pre-processing layers for augmentation)
+#### Augmentation snippets pre-processing layers for augmentation
 ```python
 from tensorflow.keras.models import Sequential
 from tensorflow.keras import layers
