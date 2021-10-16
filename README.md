@@ -13,6 +13,8 @@
 - [Pre-trained model with grayscale images](#pre-trained-model-with-grayscale-images)
 - [Tensorflow memory issues with colab](#Tensorflow-memory-issues-with-colab)
 - [cv2.imshow in google colab](#cv2imshow-in-google-colab)
+- [Disable eagar execution in tensorflow](#Disable-eagar-execution-in-tensorflow)
+- [Color channel swapping for images](#Color-channel-swapping-for-images)
 
 ## Useful code snippets
 
@@ -170,3 +172,16 @@ from google.colab.patches import cv2_imshow
 cv2_imshow("output.png")
 ```
 https://stackoverflow.com/questions/55288657/image-is-not-displaying-in-google-colab-while-using-imshow
+
+
+#### Disable eagar execution in tensorflow
+```python
+tf.compat.v1.disable_eager_execution()
+```
+
+#### Color channel swapping for images
+https://www.scivision.dev/numpy-image-bgr-to-rgb/
+```python
+b,g,r = cv2.split("img.jpg")
+data_rgb= cv2.merge([r,g,b])
+```
