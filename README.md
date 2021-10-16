@@ -11,6 +11,7 @@
 - [Augmentation snippets pre-processing layers for augmentation](#augmentation-snippets-pre-processing-layers-for-augmentation)
 - [Awesome ways of using callbacks](#awesome-ways-of-using-callbacks)
 - [Pre-trained model with grayscale images](#pre-trained-model-with-grayscale-images)
+- [Tensorflow memory issues with colab](Tensorflow-memory-issues-with-colab)
 
 ## Useful code snippets
 
@@ -158,3 +159,6 @@ https://blog.paperspace.com/tensorflow-callbacks/
 
 #### Pre-trained model with grayscale images
 https://stackoverflow.com/questions/51995977/how-can-i-use-a-pre-trained-neural-network-with-grayscale-images
+
+#### Tensorflow memory issues with colab
+https://github.com/tensorflow/tensorflow/issues/31312
