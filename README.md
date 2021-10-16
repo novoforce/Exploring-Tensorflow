@@ -12,6 +12,7 @@
 - [Awesome ways of using callbacks](#awesome-ways-of-using-callbacks)
 - [Pre-trained model with grayscale images](#pre-trained-model-with-grayscale-images)
 - [Tensorflow memory issues with colab](#Tensorflow-memory-issues-with-colab)
+- [cv2-imshow in google colab](#cv2-imshow-in-google-colab)
 
 ## Useful code snippets
 
@@ -162,3 +163,10 @@ https://stackoverflow.com/questions/51995977/how-can-i-use-a-pre-trained-neural-
 
 #### Tensorflow memory issues with colab
 https://github.com/tensorflow/tensorflow/issues/31312
+
+#### cv2.imshow in google colab
+```python
+from google.colab.patches import cv2_imshow
+cv2_imshow("output.png")
+```
+https://stackoverflow.com/questions/55288657/image-is-not-displaying-in-google-colab-while-using-imshow
