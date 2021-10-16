@@ -12,7 +12,7 @@
 - [Awesome ways of using callbacks](#awesome-ways-of-using-callbacks)
 - [Pre-trained model with grayscale images](#pre-trained-model-with-grayscale-images)
 - [Tensorflow memory issues with colab](#Tensorflow-memory-issues-with-colab)
-- [cv2-imshow in google colab](#cv2-imshow-in-google-colab)
+- [cv2.imshow in google colab](#cv2-imshow-in-google-colab)
 
 ## Useful code snippets
 
