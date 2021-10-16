@@ -11,7 +11,7 @@
 - [Augmentation snippets pre-processing layers for augmentation](#augmentation-snippets-pre-processing-layers-for-augmentation)
 - [Awesome ways of using callbacks](#awesome-ways-of-using-callbacks)
 - [Pre-trained model with grayscale images](#pre-trained-model-with-grayscale-images)
-- [Tensorflow memory issues with colab](Tensorflow-memory-issues-with-colab)
+- [Tensorflow memory issues with colab](#Tensorflow-memory-issues-with-colab)
 
 ## Useful code snippets
 
