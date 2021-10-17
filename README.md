@@ -15,7 +15,7 @@
 - [cv2.imshow in google colab](#cv2imshow-in-google-colab)
 - [Disable eagar execution in tensorflow](#Disable-eagar-execution-in-tensorflow)
 - [Color channel swapping for images](#Color-channel-swapping-for-images)
-- [Multi-Label Classification](#Multi-Label-Classification) <a href=# target='_blank'><img src='https://img.shields.io/badge/-Tutorial-yellow?style=flat-square' border='0' alt='Multi-Label Classification'/></a>
+- [https://img.shields.io/static/v1?label=Multi-Label%20Classification&message=Tutorial&color=yellow&style=flat-square](#Multi-Label-Classification) <a href=# target='_blank'><img src='https://img.shields.io/badge/-Tutorial-yellow?style=flat-square' border='0' alt='Multi-Label Classification'/></a>
 
 ## Useful code snippets
 
