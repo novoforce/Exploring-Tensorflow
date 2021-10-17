@@ -189,3 +189,35 @@ data_rgb= cv2.merge([r,g,b])
 
 #### Multi-Label Classification
 https://github.com/novoforce/Exploring-Tensorflow/blob/main/multi_label_classification.ipynb
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# References for the badges
+Tutorial:
+https://img.shields.io/static/v1?label=put-custom-label&message=Tutorial&color=yellow&style=flat-square
+<a href='https://github.com/novoforce/Exploring-Tensorflow/blob/main/README.md#' target='_blank'><img src='https://img.shields.io/static/v1?label=put%20label&message=Tutorial&color=yellow&style=flat-square' border='0' alt='put alternate text'/></a>
+
+
+Snippet:
+https://img.shields.io/static/v1?label=put-custom-label&message=Snippet&color=blue&style=flat-square
+<a href='https://github.com/novoforce/Exploring-Tensorflow#' target='_blank'><img src='https://img.shields.io/static/v1?label=put%20label&message=Snippet&color=blue&style=flat-square' border='0' alt='put alternate text'/></a>
+
+Issue:
+https://img.shields.io/static/v1?label=put-custom-label&message=Issue&color=red&style=flat-square
+<a href='https://github.com/novoforce/Exploring-Tensorflow/blob/main/README.md#' target='_blank'><img src='https://img.shields.io/static/v1?label=put%20label&message=Issue&color=red&style=flat-square' border='0' alt='put alternate text'/></a>
