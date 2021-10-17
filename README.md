@@ -196,8 +196,14 @@ https://github.com/novoforce/Exploring-Tensorflow/blob/main/multi_label_classifi
 !wget -O <output file with extension> --no-check-certificate "<download link>"
 
 ! curl <download link without quotes> > <output_file>
+
+# If public sharing link is available
+!gdown --id 1cewMfusmPjYWbrnuJRuKhPMwRe_b9PaT
 ```
-https://stackoverflow.com/questions/48735600/file-download-from-google-drive-to-colaboratory
+If shared link is only for you:
+    https://stackoverflow.com/questions/62759748/downloading-data-from-a-shared-google-drive-link-in-google-colab
+Extra links:
+    https://stackoverflow.com/questions/48735600/file-download-from-google-drive-to-colaboratory
 
 
 
