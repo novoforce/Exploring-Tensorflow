@@ -16,6 +16,7 @@
 - <a href='https://github.com/novoforce/Exploring-Tensorflow#Disable-eagar-execution-in-tensorflow' target='_blank'><img src='https://img.shields.io/static/v1?label=Disable%20eagar%20execution%20in%20tensorflow&message=Snippet&color=blue&style=flat-square' border='0' alt='Disable eagar execution in tensorflow'/></a>
 - <a href='https://github.com/novoforce/Exploring-Tensorflow/blob/main/README.md#Color-channel-swapping-for-images' target='_blank'><img src='https://img.shields.io/static/v1?label=Color%20channel%20swapping%20for%20images&message=Tutorial&color=yellow&style=flat-square' border='0' alt='Color channel swapping for images'/></a>
 - <a href='https://github.com/novoforce/Exploring-Tensorflow/blob/main/README.md#multi-label-classification' target='_blank'><img src='https://img.shields.io/static/v1?label=Multi-Label%20Classification&message=Tutorial&color=yellow&style=flat-square' border='0' alt='Multi-Label Classification'/></a>
+- <a href='https://github.com/novoforce/Exploring-Tensorflow#Download-files-to-colab' target='_blank'><img src='https://img.shields.io/static/v1?label=Download%20files%20to%20colab&message=Snippet&color=blue&style=flat-square' border='0' alt='Download files to colab'/></a>
 
 ## Useful code snippets
 
@@ -190,6 +191,13 @@ data_rgb= cv2.merge([r,g,b])
 #### Multi-Label Classification
 https://github.com/novoforce/Exploring-Tensorflow/blob/main/multi_label_classification.ipynb
 
+#### Download files to colab
+```python
+!wget -O <output file with extension> --no-check-certificate "<download link>"
+
+! curl <download link without quotes> > <output_file>
+```
+https://stackoverflow.com/questions/48735600/file-download-from-google-drive-to-colaboratory
 
 
 
