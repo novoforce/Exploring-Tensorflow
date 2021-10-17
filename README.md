@@ -2,7 +2,7 @@
 
 ## Table Of Contents
 ---------------------
-- <a href='https://github.com/novoforce/Exploring-Tensorflow/blob/main/README.md#multi-label-classification' target='_blank'><img src='https://img.shields.io/static/v1?label=Importing%20library&message=Snippet&color=blue&style=flat-square' border='0' alt='Multi-Label Classification'/></a>
+- <a href='https://github.com/novoforce/Exploring-Tensorflow#importing-library-snippets' target='_blank'><img src='https://img.shields.io/static/v1?label=Importing%20library&message=Snippet&color=blue&style=flat-square' border='0' alt='Multi-Label Classification'/></a>
 - [Plotting snippet](#plotting-snippet)
 - [Display image snippet](#display-image-snippet)
 - [Using pre-trained model snippets](#using-pre-trained-model-snippets)
