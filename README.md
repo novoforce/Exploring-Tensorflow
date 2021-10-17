@@ -22,7 +22,7 @@
 
 ## Useful code snippets
 
-#### Importing library snippets
+### Importing library snippets
 
 ```python
 import tensorflow as tf
@@ -40,7 +40,7 @@ import matplotlib.image as mpimg
 
 ```
 
-#### Plotting snippet
+### Plotting snippet
 ```python
 import matplotlib.pyplot as plt
 %matplotlib inline
