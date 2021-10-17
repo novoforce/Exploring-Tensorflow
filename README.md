@@ -3,8 +3,8 @@
 ## Table Of Contents
 ---------------------
 - <a href='https://github.com/novoforce/Exploring-Tensorflow#importing-library-snippets' target='_blank'><img src='https://img.shields.io/static/v1?label=Importing%20library&message=Snippet&color=blue&style=flat-square' border='0' alt='Multi-Label Classification'/></a>
-- <a href='https://github.com/novoforce/Exploring-Tensorflow##plotting-snippet' target='_blank'><img src='https://img.shields.io/static/v1?label=Plotting%20snippet&message=Snippet&color=blue&style=flat-square' border='0' alt='Plotting snippet'/></a>
-- [Display image snippet](#display-image-snippet)
+- <a href='https://github.com/novoforce/Exploring-Tensorflow#plotting-snippet' target='_blank'><img src='https://img.shields.io/static/v1?label=Plotting%20snippet&message=Snippet&color=blue&style=flat-square' border='0' alt='Plotting snippet'/></a>
+- [Display image snippet](#display-image-snippet)<a href='https://github.com/novoforce/Exploring-Tensorflow#Display-image-snippet' target='_blank'><img src='https://img.shields.io/static/v1?label=Display%20image%20snippet&message=Snippet&color=blue&style=flat-square' border='0' alt='Display image snippet'/></a>
 - [Using pre-trained model snippets](#using-pre-trained-model-snippets)
 - [Compiling and fitting model snippets](#compiling-and-fitting-model-snippets)
 - [Prediction snippets](#prediction-snippets)
