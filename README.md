@@ -2,7 +2,7 @@
 
 ## Table Of Contents
 ---------------------
-- [Importing library snippets](#importing-library-snippets)
+- [Importing library snippets](#importing-library-snippets) <a href=# target='_blank'><img src='https://img.shields.io/badge/-Snippet-green?style=flat-square' border='0' alt='Importing library snippets'/></a>
 - [Plotting snippet](#plotting-snippet)
 - [Display image snippet](#display-image-snippet)
 - [Using pre-trained model snippets](#using-pre-trained-model-snippets)
@@ -15,7 +15,7 @@
 - [cv2.imshow in google colab](#cv2imshow-in-google-colab)
 - [Disable eagar execution in tensorflow](#Disable-eagar-execution-in-tensorflow)
 - [Color channel swapping for images](#Color-channel-swapping-for-images)
-- [Multi-Label Classification](#Multi-Label-Classification) <a href='https://leetcode.com/novoforce/' target='_blank'><img src='https://img.shields.io/badge/-Tutorial-yellow?style=flat-square' border='0' alt='Leetcode'/></a>
+- [Multi-Label Classification](#Multi-Label-Classification) <a href=# target='_blank'><img src='https://img.shields.io/badge/-Tutorial-yellow?style=flat-square' border='0' alt='Multi-Label Classification'/></a>
 
 ## Useful code snippets
 
