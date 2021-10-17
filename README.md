@@ -14,7 +14,7 @@
 - <a href='https://github.com/novoforce/Exploring-Tensorflow/blob/main/README.md#Tensorflow-memory-issues-with-colab' target='_blank'><img src='https://img.shields.io/static/v1?label=Tensorflow%20memory%20issues%20with%20colab&message=Issue&color=red&style=flat-square' border='0' alt='Tensorflow memory issues with colab'/></a>
 - <a href='https://github.com/novoforce/Exploring-Tensorflow/blob/main/README.md#cv2imshow-in-google-colab' target='_blank'><img src='https://img.shields.io/static/v1?label=cv2imshow%20in%20google%20colab&message=Issue&color=red&style=flat-square' border='0' alt='cv2.imshow in google colab'/></a>
 - <a href='https://github.com/novoforce/Exploring-Tensorflow#Disable-eagar-execution-in-tensorflow' target='_blank'><img src='https://img.shields.io/static/v1?label=Disable%20eagar%20execution%20in%20tensorflow&message=Snippet&color=blue&style=flat-square' border='0' alt='Disable eagar execution in tensorflow'/></a>
-- [Color channel swapping for images](#Color-channel-swapping-for-images)
+- [Color channel swapping for images](#Color-channel-swapping-for-images) <a href='https://github.com/novoforce/Exploring-Tensorflow/blob/main/README.md#Color-channel-swapping-for-images' target='_blank'><img src='https://img.shields.io/static/v1?label=Color%20channel%20swapping%20for%20images&message=Tutorial&color=yellow&style=flat-square' border='0' alt='Color channel swapping for images'/></a>
 - <a href='https://github.com/novoforce/Exploring-Tensorflow/blob/main/README.md#multi-label-classification' target='_blank'><img src='https://img.shields.io/static/v1?label=Multi-Label%20Classification&message=Tutorial&color=yellow&style=flat-square' border='0' alt='Multi-Label Classification'/></a>
 
 ## Useful code snippets
