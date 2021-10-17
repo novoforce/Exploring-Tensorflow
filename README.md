@@ -17,6 +17,7 @@
 - <a href='https://github.com/novoforce/Exploring-Tensorflow/blob/main/README.md#Color-channel-swapping-for-images' target='_blank'><img src='https://img.shields.io/static/v1?label=Color%20channel%20swapping%20for%20images&message=Tutorial&color=yellow&style=flat-square' border='0' alt='Color channel swapping for images'/></a>
 - <a href='https://github.com/novoforce/Exploring-Tensorflow/blob/main/README.md#multi-label-classification' target='_blank'><img src='https://img.shields.io/static/v1?label=Multi-Label%20Classification&message=Tutorial&color=yellow&style=flat-square' border='0' alt='Multi-Label Classification'/></a>
 - <a href='https://github.com/novoforce/Exploring-Tensorflow#Download-files-to-colab' target='_blank'><img src='https://img.shields.io/static/v1?label=Download%20files%20to%20colab&message=Snippet&color=blue&style=flat-square' border='0' alt='Download files to colab'/></a>
+- <a href='https://github.com/novoforce/Exploring-Tensorflow#Download-files-from-colab-to-local-system' target='_blank'><img src='https://img.shields.io/static/v1?label=Download%20files%20from%20colab%20to%20local%20system&message=Snippet&color=blue&style=flat-square' border='0' alt='Download files from colab to local system'/></a>
 - <a href='https://github.com/novoforce/Exploring-Tensorflow#Import-python-files-from-different-location' target='_blank'><img src='https://img.shields.io/static/v1?label=Import%20python%20files%20from%20different%20location&message=Snippet&color=blue&style=flat-square' border='0' alt='Import python files from different location'/></a>
 
 ## Useful code snippets
@@ -202,9 +203,25 @@ https://github.com/novoforce/Exploring-Tensorflow/blob/main/multi_label_classifi
 !gdown --id 1cewMfusmPjYWbrnuJRuKhPMwRe_b9PaT
 ```
 If shared link is only for you:
+
     https://stackoverflow.com/questions/62759748/downloading-data-from-a-shared-google-drive-link-in-google-colab
 Extra links:
+
     https://stackoverflow.com/questions/48735600/file-download-from-google-drive-to-colaboratory
+    
+    
+    
+    
+#### Download files from colab to local system
+```python
+!zip -r /content/file.zip /content/Folder_To_Zip
+
+from google.colab import files
+files.download("/content/file.zip")
+```
+
+
+
 
 #### Import python files from different location
 ```python
