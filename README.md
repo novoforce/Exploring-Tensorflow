@@ -187,5 +187,5 @@ b,g,r = cv2.split("img.jpg")
 data_rgb= cv2.merge([r,g,b])
 ```
 
-#### Multi-Label Classification <a href='https://leetcode.com/novoforce/' target='_blank'><img src='https://img.shields.io/badge/-Tutorial-yellow?style=for-the-badge' border='0' alt='Leetcode'/></a>
+#### Multi-Label Classification
 https://github.com/novoforce/Exploring-Tensorflow/blob/main/multi_label_classification.ipynb
