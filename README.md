@@ -15,7 +15,7 @@
 - [cv2.imshow in google colab](#cv2imshow-in-google-colab)
 - [Disable eagar execution in tensorflow](#Disable-eagar-execution-in-tensorflow)
 - [Color channel swapping for images](#Color-channel-swapping-for-images)
-- [Multi-Label Classification](#Multi-Label-Classification)
+- [Multi-Label Classification #tutorial](#Multi-Label-Classification)
 
 ## Useful code snippets
 
@@ -187,5 +187,5 @@ b,g,r = cv2.split("img.jpg")
 data_rgb= cv2.merge([r,g,b])
 ```
 
-#### Multi-Label Classification
+#### Multi-Label Classification #tutorial
 https://github.com/novoforce/Exploring-Tensorflow/blob/main/multi_label_classification.ipynb
