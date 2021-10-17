@@ -63,7 +63,7 @@ plt.xlabel('epoch')
 plt.legend(['train', 'test'], loc='upper left')
 plt.show()
 ```
-#### Display image snippet
+### Display image snippet
 ```python
 CLASSES=  {0:"Angry", 1:"Disgust", 2:"Fear", 3:"Happy", 4:"Sad", 5:"Surprise", 6:"Neutral"}
 
@@ -76,7 +76,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-#### Using pre-trained model snippets
+### Using pre-trained model snippets
 ```python
 from tensorflow.keras.applications import MobileNetV2  #name of the model to be used
 from tensorflow.keras.models import Model #API for the wrapping
@@ -101,7 +101,7 @@ dir(pretrained_model)
 
 ```
 
-#### Compiling and fitting model snippets
+### Compiling and fitting model snippets
 ```python
 
 earlystop = EarlyStopping(patience=10)
@@ -124,7 +124,7 @@ training = Mobilenet_v2_model.fit(train_generator,
                        callbacks=callbacks)
 ```
 
-#### Prediction snippets
+### Prediction snippets
 https://www.tensorflow.org/api_docs/python/tf/keras/preprocessing/
 ```python
 from tensorflow.keras.preprocessing import image
@@ -137,7 +137,7 @@ img_pred=np.expand_dims(img_pred, axis=0)
 result = Efficientnet_model.predict(img_pred)
 ```
 
-#### Augmentation snippets pre-processing layers for augmentation
+### Augmentation snippets pre-processing layers for augmentation
 ```python
 from tensorflow.keras.models import Sequential
 from tensorflow.keras import layers
@@ -160,17 +160,17 @@ for image, label in ds_train.take(1):
         plt.axis("off")
 ```
 
-#### Awesome ways of using callbacks
+### Awesome ways of using callbacks
 https://blog.paperspace.com/tensorflow-callbacks/
 
 
-#### Pre-trained model with grayscale images
+### Pre-trained model with grayscale images
 https://stackoverflow.com/questions/51995977/how-can-i-use-a-pre-trained-neural-network-with-grayscale-images
 
-#### Tensorflow memory issues with colab
+### Tensorflow memory issues with colab
 https://github.com/tensorflow/tensorflow/issues/31312
 
-#### cv2.imshow in google colab
+### cv2.imshow in google colab
 ```python
 from google.colab.patches import cv2_imshow
 cv2_imshow("output.png")
@@ -178,22 +178,22 @@ cv2_imshow("output.png")
 https://stackoverflow.com/questions/55288657/image-is-not-displaying-in-google-colab-while-using-imshow
 
 
-#### Disable eagar execution in tensorflow
+### Disable eagar execution in tensorflow
 ```python
 tf.compat.v1.disable_eager_execution()
 ```
 
-#### Color channel swapping for images
+### Color channel swapping for images
 https://www.scivision.dev/numpy-image-bgr-to-rgb/
 ```python
 b,g,r = cv2.split("img.jpg")
 data_rgb= cv2.merge([r,g,b])
 ```
 
-#### Multi-Label Classification
+### Multi-Label Classification
 https://github.com/novoforce/Exploring-Tensorflow/blob/main/multi_label_classification.ipynb
 
-#### Download files to colab
+### Download files to colab
 ```python
 !wget -O <output file with extension> --no-check-certificate "<download link>"
 
@@ -208,11 +208,8 @@ If shared link is only for you:
 Extra links:
 
     https://stackoverflow.com/questions/48735600/file-download-from-google-drive-to-colaboratory
-    
-    
-    
-    
-#### Download files from colab to local system
+       
+### Download files from colab to local system
 ```python
 !zip -r /content/file.zip /content/Folder_To_Zip
 
@@ -223,7 +220,7 @@ files.download("/content/file.zip")
 
 
 
-#### Import python files from different location
+### Import python files from different location
 ```python
 import sys 
 import os
@@ -251,14 +248,17 @@ https://stackoverflow.com/questions/2349991/how-to-import-other-python-files
 
 # References for the badges
 Tutorial:
+
 https://img.shields.io/static/v1?label=put-custom-label&message=Tutorial&color=yellow&style=flat-square
 <a href='https://github.com/novoforce/Exploring-Tensorflow/blob/main/README.md#' target='_blank'><img src='https://img.shields.io/static/v1?label=put%20label&message=Tutorial&color=yellow&style=flat-square' border='0' alt='put alternate text'/></a>
 
 
 Snippet:
+
 https://img.shields.io/static/v1?label=put-custom-label&message=Snippet&color=blue&style=flat-square
 <a href='https://github.com/novoforce/Exploring-Tensorflow#' target='_blank'><img src='https://img.shields.io/static/v1?label=put%20label&message=Snippet&color=blue&style=flat-square' border='0' alt='put alternate text'/></a>
 
 Issue:
+
 https://img.shields.io/static/v1?label=put-custom-label&message=Issue&color=red&style=flat-square
 <a href='https://github.com/novoforce/Exploring-Tensorflow/blob/main/README.md#' target='_blank'><img src='https://img.shields.io/static/v1?label=put%20label&message=Issue&color=red&style=flat-square' border='0' alt='put alternate text'/></a>
