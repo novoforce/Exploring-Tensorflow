@@ -10,7 +10,7 @@ def display(img, mapp='gray'):
 def overlay(imgp1,imgp2):
     img1 = cv2.imread(imgp1)
     img2 = cv2.imread(imgp2)
-    img2 =cv2.resize(img2,(300,300))
+    img2 =cv2.resize(img2,(300,300)) #deleberately
 
     img1 = cv2.cvtColor(img1, cv2.COLOR_BGR2RGB)
     img2 = cv2.cvtColor(img2, cv2.COLOR_BGR2RGB)
@@ -21,7 +21,7 @@ def overlay(imgp1,imgp2):
     # x_offset=0
     # y_offset=0
 
-    large_img[0:0+small_img.shape[0], 0:0+small_img.shape[1]] = small_img
+    large_img[0:0+small_img.shape[0], 0:0+small_img.shape[1],:] = small_img
     display(large_img)
 
 def vanilla_blending(imgp1,imgp2):
@@ -31,7 +31,7 @@ def vanilla_blending(imgp1,imgp2):
     img2 = cv2.cvtColor(img2, cv2.COLOR_BGR2RGB)
     img1 =cv2.resize(img1,(1200,1200))
     img2 =cv2.resize(img2,(1200,1200))
-    blended = cv2.addWeighted(src1=img1,alpha=0.7,src2=img2,beta=0.3,gamma=0)
+    blended = cv2.addWeighted(src1=img1,alpha=0.7,src2=img2,beta=0.3,gamma=0) #opencv api
     display(blended)
 
 def blend_image(imgp1,imgp2):
@@ -39,6 +39,8 @@ def blend_image(imgp1,imgp2):
     img2= cv2.imread(imgp2)
     img1 = cv2.cvtColor(img1, cv2.COLOR_BGR2RGB)
     img2 = cv2.cvtColor(img2, cv2.COLOR_BGR2RGB)
+    print("the shape of img1:> ",img1.shape) #hwd
+    print("the shape of img2:> ",img2.shape) #hwd
     img2= cv2.resize(img2,(0,0), img2, 0.3, 0.3)
 
     # display(img1)
@@ -53,7 +55,7 @@ def blend_image(imgp1,imgp2):
 
     roi= img1[y_offset: , x_offset:,:]
     print(f"shape of roi:> {roi.shape}")
-    # display(roi)
+    display(roi)
 
     #########################################################
     # creating a mask
@@ -61,10 +63,10 @@ def blend_image(imgp1,imgp2):
     print(f"shape of img2gray:> {img2gray.shape}")
     display(img2gray)
 
-    #inverse the mask---> doubt
+    #inverse the mask
     mask_inv = cv2.bitwise_not(img2gray) #only 2 channels
     display(mask_inv)
-
+    print("test")
     #place the mask on top of img2-- so as to extract the logo part
     fg = cv2.bitwise_or(img2, img2, mask=mask_inv)
     display(fg)
