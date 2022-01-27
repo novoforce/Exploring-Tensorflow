@@ -43,7 +43,7 @@ def adaptive_threshold(image):
 
     #simple thresholding
     ret,th1 = cv2.threshold(img,127,255,cv2.THRESH_BINARY)
-    # display(th1)
+    display(th1)
 
 
     #adaptive thresholding
@@ -54,7 +54,7 @@ def adaptive_threshold(image):
     # display(th3)
 
 
-    blended = cv2.addWeighted(src1=th2,alpha=0.7,src2=th1,beta=0.3,gamma=0)
+    blended = cv2.addWeighted(src1=th2,alpha=0.7,src2=th3,beta=0.3,gamma=0)
     # blended= cv2.bitwise_and(th2,th3)
     display(blended)
 

@@ -23,17 +23,27 @@ def erosion(img):
 def dilation(img):
     # dst(x,y)=max(x′,y′)
     kernel = np.ones((5,5),np.uint8) #kernel is white, so erode white from borders 
-    erosion1 = cv2.dilate(img,kernel,iterations = 5)
+    erosion1 = cv2.dilate(img,kernel,iterations = 2)
     display(erosion1)
 
-# def opening(img):
-#     kernel = np.ones((5,5),np.uint8)
-#     white_noise = (np.random.randint(low=0,high=2,size=(600,600)))* 255
-#     display(white_noise)
-#     noise_img = white_noise+img
-#     display(noise_img)
-#     opening = cv2.morphologyEx(noise_img, cv2.MORPH_OPEN, kernel)
-#     display(opening)
+def opening(img): #erosion(remove white) + dilation(add white)
+    kernel = np.ones((5,5),np.uint8)
+    white_noise = (np.random.randint(low=0,high=2,size=(600,600)))* 255
+    # display(white_noise)
+    noise_img = white_noise+img
+    display(noise_img)
+    opening = cv2.morphologyEx(noise_img, cv2.MORPH_OPEN, kernel)
+    display(opening)
+
+def closing(img): #dilation(add white) + erosion(remove white)
+    kernel = np.ones((5,5),np.uint8)
+    black_noise = (np.random.randint(low=0,high=2,size=(600,600)))* -255
+    noise_img = black_noise+img
+    display(noise_img)
+    noise_img[noise_img==-255] = 0 #mathematically stable
+    display(noise_img)
+    closing = cv2.morphologyEx(noise_img, cv2.MORPH_CLOSE, kernel)
+    display(closing)
 
 
 
@@ -43,4 +53,5 @@ if __name__ == '__main__':
     # display(img) #actual image
     # erosion(img) #eroded image
     # dilation(img) #dilate image
-    opening(img)
+    # opening(img)
+    closing(img)
