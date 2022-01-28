@@ -14,10 +14,10 @@ image = img_to_array(image)
 Dataset format
 * X: png/jpg image format
 * Y: Path of the image.
-    For eg:
-        Positive class:
+    * For eg:
+        * Positive class:
             "SMILEsmileD/SMILEs/positives/positives7/9039.jpg"
-        Negative class:
+        * Negative class:
             "SMILEsmileD/SMILEs/negatives/negatives7/5472.jpg"
 
 ```python
