@@ -11,7 +11,13 @@ image = load_img(image_path, target_size=(32, 32),color_mode='grayscale')
 image = img_to_array(image)
 ```
 #### Generic Image loader functions
+Problem name:
+Detect whether a face in the photo is a smiling face or not ?
+* positive class: Image with smile
+* negative class: Image without smile
+
 Dataset format
+Datasets are subdivided into different folders namely "positives" and "negatives"
 * X: png/jpg image format
 * Y: Path of the image.
     * For eg:
