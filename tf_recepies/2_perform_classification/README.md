@@ -69,10 +69,10 @@ dataset_paths = [*glob.glob(files_pattern)]
                                     random_state=999)
 
 ```
-
+--------------------------------------------------------
 ## Multi Class Classification
 --------------------------------------------------------
-### API Snippets Used'
+### API Snippets Used
 Problem name:
 * Classify whether the image is a "stone", "paper", "scissor"
 * No of classes: 3
@@ -150,4 +150,19 @@ for more info on dataset.shuffle:
 here "buffer_size" should be "len(dataset_path)" which will make sure shuffle is performed properly
 https://stackoverflow.com/questions/46444018/meaning-of-buffer-size-in-dataset-map-dataset-prefetch-and-dataset-shuffle
 
+--------------------------------------------------------
+## Multi Label Classification
+--------------------------------------------------------
+Problem name: Predict labels for a product in the image.
 
+For eg: For a image of red shirt
+
+The labels are: "Red" "Shirt"
+
+* Dataset format: 
+    * Image folder containing images of the products
+    * A csv file containing the following attributes/columns:
+        * id, gender, masterCategory, subCategory, articleType, baseColour, season, year, usage, productDetails
+        * 15970, Men, Apparel, Topwear, Shirts, Navy Blue, Fall, 2011, Casual, Turtle Check Men Navy Blue Shirt
+
+### API Snippets Used
