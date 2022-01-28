@@ -163,13 +163,59 @@ The labels are: "Red" "Shirt"
     * Image folder containing images of the products
     * A csv file containing the following attributes/columns:
 
-
 id | gender | masterCategory | subCategory | articleType | baseColour | season | year | usage | productDetails
 --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
 59263 | Women | Accessories | Watches | Watches | Silver | Winter | 2016 | Casual | Titan Women Silver Watch
 15970 | Men | Apparel | Topwear | Shirts | Navy Blue | Fall | 2011 | Casual | Turtle Check Men Navy Blue Shirt
 
-
+**Out of the above attributes we only need "Gender" and "Usage" attributes for our model prediction**
 
 
 ### API Snippets Used
+#### Data loading snippet
+
+input:> CSV file with 10 columns/attributes and "n" rows
+The following snippet will convert the csv data to key value pairs,
+where "key" is "id" and values are other attributes
+
+At line 191, it is a good usecase of dictionary comprehension.
+```python
+with open(styles_path, 'r') as f:
+    dict_reader = DictReader(f)
+    STYLES = [*dict_reader] #list of ordered dicts as shown below
+    """ 
+    OrderedDict([('id', '15970'), ('gender', 'Men'), ('masterCategory', 'Apparel'), ('subCategory', 'Topwear'), 
+    ('articleType', 'Shirts'), ('baseColour', 'Navy Blue'), ('season', 'Fall'), ('year', '2011'), ('usage', 'Casual'),
+    ('productDisplayName', 'Turtle Check Men Navy Blue Shirt')])
+    """
+    article_type = 'Watches'
+    genders = {'Men', 'Women'}
+    usages = {'Casual', 'Smart Casual', 'Formal'}
+    STYLES = {style['id']: style
+              for style in STYLES
+              if (style['articleType'] == article_type and
+                  style['gender'] in genders and
+                  style['usage'] in usages)}
+#final output:
+# key:> 59263 value:> OrderedDict([('id', '59263'), ('gender', 'Women'), ('masterCategory', 'Accessories'), ('subCategory', 'Watches'), ('articleType', 'Watches'), ('baseColour', 'Silver'), ('season', 'Winter'), ('year', '2016'), ('usage', 'Casual'), ('productDisplayName', 'Titan Women Silver Watch')])
+```
+#### Snippet for filtering data using functional() python methods
+```python
+image_paths = [*filter(lambda p: p.split(os.path.sep)[-1][:-4] in STYLES.keys(),image_paths)]
+```
+
+#### Multi-label binarization API
+A good link for Multi-label binarizatio:> https://www.kaggle.com/questions-and-answers/66693
+A good link from the official docs:> https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.MultiLabelBinarizer.html
+
+```python
+mlb = MultiLabelBinarizer()
+y = mlb.fit_transform(y)
+"""
+mlb.classes_ : This will return the classes names which were encoded.
+mlb.inverse_transform(output_from_the_model) #since model will predict labels(not human understandable) and inverse_transform will convert back to the actual labels.
+"""
+```
+
+
+
