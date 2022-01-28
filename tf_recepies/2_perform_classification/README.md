@@ -72,7 +72,26 @@ dataset_paths = [*glob.glob(files_pattern)]
 
 ## Multi Class Classification
 --------------------------------------------------------
-### API Snippets Used
+### API Snippets Used'
+Problem name:
+* Classify whether the image is a "stone", "paper", "scissor"
+* No of classes: 3
+
+Dataset format:
+* The directories containing the class images with the names of the folder as corresponding class names
+* for eg:
+    * "stone"
+        * "img1.png"
+        * "img2.png"
+        * "img3.png"
+    * "paper"
+        * "img1.png"
+        * "img2.png"
+        * "img3.png"
+    * "scissor"
+        * "img1.png"
+        * "img2.png"
+        * "img3.png"
 
 #### Loading the image
 
