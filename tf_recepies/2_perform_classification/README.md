@@ -162,7 +162,14 @@ The labels are: "Red" "Shirt"
 * Dataset format: 
     * Image folder containing images of the products
     * A csv file containing the following attributes/columns:
-        * id, gender, masterCategory, subCategory, articleType, baseColour, season, year, usage, productDetails
-        * 15970, Men, Apparel, Topwear, Shirts, Navy Blue, Fall, 2011, Casual, Turtle Check Men Navy Blue Shirt
+
+
+id | gender | masterCategory | subCategory | articleType | baseColour | season | year | usage | productDetails
+--- | --- | --- | --- | --- | --- | --- | --- | --- | ---
+59263 | Women | Accessories | Watches | Watches | Silver | Winter | 2016 | Casual | Titan Women Silver Watch
+15970 | Men | Apparel | Topwear | Shirts | Navy Blue | Fall | 2011 | Casual | Turtle Check Men Navy Blue Shirt
+
+
+
 
 ### API Snippets Used
