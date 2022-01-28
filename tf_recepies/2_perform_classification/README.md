@@ -205,7 +205,8 @@ image_paths = [*filter(lambda p: p.split(os.path.sep)[-1][:-4] in STYLES.keys(),
 ```
 
 #### Multi-label binarization API
-A good link for Multi-label binarizatio:> https://www.kaggle.com/questions-and-answers/66693
+A good link for Multi-label binarization:> https://www.kaggle.com/questions-and-answers/66693
+
 A good link from the official docs:> https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.MultiLabelBinarizer.html
 
 ```python
