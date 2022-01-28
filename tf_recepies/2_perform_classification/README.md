@@ -1,15 +1,17 @@
 # Perform Classification
 --------------------------------------------------------
 
-#### Binary classification
------------------------------------------------------------
-    API SNIPPETS USAGE
-    ```python
-    image = load_img(image_path, target_size=(32, 32),color_mode='grayscale')
-    image = img_to_array(image)
+## Binary classification
+--------------------------------------------------------
+### API SNIPPETS USED
 
-    #for enumerating files inside list
-    files_pattern = "SMILEsmileD/SMILEs/*/*/*.jpg"
+```python
+image = load_img(image_path, target_size=(32, 32),color_mode='grayscale')
+image = img_to_array(image)
 
-    dataset_paths = [*glob.glob(files_pattern)]
-    ```
+#for enumerating files inside list
+files_pattern = "SMILEsmileD/SMILEs/*/*/*.jpg"
+
+dataset_paths = [*glob.glob(files_pattern)]
+
+```
