@@ -91,8 +91,8 @@ Allowed values are: 1,2,4 and 8.
 for more info on other options available:
 https://www.tensorflow.org/api_docs/python/tf/io/decode_jpeg
 #### Generic Image loader function using TF
-Good data-pipleine TF API blog:> https://cs230.stanford.edu/blog/datapipeline/
-Good snippets from official TF blog:> https://www.tensorflow.org/api_docs/python/tf/data/Dataset
+* Good data-pipleine TF API blog:> https://cs230.stanford.edu/blog/datapipeline/
+* Good snippets from official TF blog:> https://www.tensorflow.org/api_docs/python/tf/data/Dataset
 ```python
 def load_image_and_label(image_path, target_size=(32, 32)):
     image = tf.io.read_file(image_path)
@@ -129,6 +129,6 @@ and return tensors.
 
 for more info on dataset.shuffle:
 here "buffer_size" should be "len(dataset_path)" which will make sure shuffle is performed properly
-#https://stackoverflow.com/questions/46444018/meaning-of-buffer-size-in-dataset-map-dataset-prefetch-and-dataset-shuffle
+https://stackoverflow.com/questions/46444018/meaning-of-buffer-size-in-dataset-map-dataset-prefetch-and-dataset-shuffle
 
 
