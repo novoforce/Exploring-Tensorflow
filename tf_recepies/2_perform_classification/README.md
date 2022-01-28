@@ -21,10 +21,16 @@ Datasets are subdivided into different folders namely "positives" and "negatives
 * X: png/jpg image format
 * Y: Path of the image.
     * For eg:
-        * Positive class:
+        * Positive class:>
             "SMILEsmileD/SMILEs/positives/positives7/9039.jpg"
-        * Negative class:
+        * Negative class:>
             "SMILEsmileD/SMILEs/negatives/negatives7/5472.jpg"
+
+How to process the data for the model ?
+
+For training the model we need data in the array format so,
+the below load_images_and_labels() will load the images and extract the labels from
+the path of the image, and finally convert to list array of images and labels.
 
 ```python
 def load_images_and_labels(image_paths):
