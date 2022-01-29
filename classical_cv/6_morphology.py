@@ -22,7 +22,7 @@ def erosion(img):
 
 def dilation(img):
     # dst(x,y)=max(x′,y′)
-    kernel = np.ones((5,5),np.uint8) #kernel is white, so erode white from borders 
+    kernel = np.ones((5,5),np.uint8) #kernel is white, so expand white from borders 
     erosion1 = cv2.dilate(img,kernel,iterations = 2)
     display(erosion1)
 
