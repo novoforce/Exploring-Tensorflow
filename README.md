@@ -20,7 +20,7 @@
 - <a href='https://github.com/novoforce/Exploring-Tensorflow#Download-files-from-colab-to-local-system' target='_blank'><img src='https://img.shields.io/static/v1?label=Download%20files%20from%20colab%20to%20local%20system&message=Snippet&color=blue&style=flat-square' border='0' alt='Download files from colab to local system'/></a>
 - <a href='https://github.com/novoforce/Exploring-Tensorflow#Import-python-files-from-different-location' target='_blank'><img src='https://img.shields.io/static/v1?label=Import%20python%20files%20from%20different%20location&message=Snippet&color=blue&style=flat-square' border='0' alt='Import python files from different location'/></a>
 - <a href='https://github.com/novoforce/Exploring-Tensorflow/blob/main/yolo_v4.ipynb' target='_blank'><img src='https://img.shields.io/static/v1?label=YoloV4&message=Tutorial&color=yellow&style=flat-square' border='0' alt='YoloV4'/></a>
-- <a href='https://github.com/novoforce/Exploring-Tensorflow#Unrar,-Unzip,-Untar-Rar,-Zip,-Tar-in-GDrive' target='_blank'><img src='https://img.shields.io/static/v1?label=Unrar%20Unzip%20Untar%20in%20Gdrive&message=Snippet&color=blue&style=flat-square' border='0' alt='Unrar, Unzip, Untar Rar, Zip, Tar in GDrive'/></a>
+- <a href='https://github.com/novoforce/Exploring-Tensorflow#unrar-unzip-untar-rar-zip-tar-in-gdrive' target='_blank'><img src='https://img.shields.io/static/v1?label=Unrar%20Unzip%20Untar%20in%20Gdrive&message=Snippet&color=blue&style=flat-square' border='0' alt='Unrar, Unzip, Untar Rar, Zip, Tar in GDrive'/></a>
 
 ## Useful code snippets
 
